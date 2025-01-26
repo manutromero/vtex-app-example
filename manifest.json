@@ -1,9 +1,9 @@
 {
-  "vendor": "CHANGE_ME",
-  "name": "CHANGE_ME",
+  "vendor": "itgloberspartnerpe",
+  "name": "custom-app",
   "version": "0.0.0",
-  "title": "CHANGE_ME",
-  "description": "CHANGE_ME",
+  "title": "Test-App",
+  "description": "App de pruebas para bancolombia",
   "builders": {
     "react": "3.x",
     "messages": "1.x",
