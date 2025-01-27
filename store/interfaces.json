@@ -1,0 +1,8 @@
+{
+    "wrapper-greeting": {
+        "component": "Greeting",
+        "render": "client",
+        "composition": "children",
+        "allowed": "*"
+    }
+}
