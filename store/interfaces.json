@@ -2,7 +2,11 @@
     "wrapper-greeting": {
         "component": "Greeting",
         "render": "client",
-        "composition": "children",
-        "allowed": "*"
-    }
+        "composition": "children"
+    },
+    "wrapper-product-context": {
+      "component": "ProductContext",
+      "render": "client",
+      "composition": "children"
+  }
 }

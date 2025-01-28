@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-function Greeting() {
-  return <div>Hey, manu</div>
+type Props = {
+  name: string,
+  children?: ReactNode;
+}
+
+function Greeting({ name, children }: Props) {
+  return <div>Hey, {name}
+   {children && <div>{children}</div>}
+   </div>
 }
 
 export default Greeting
