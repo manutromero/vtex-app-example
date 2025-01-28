@@ -4430,9 +4430,9 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.0.tgz#f67fa67c94da8f4d0cfff981aee4118064199b8f"
   integrity sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==
 
-"qamkpmovilidadco.frontend-app@https://manutromero--qamkpmovilidadco.myvtex.com/_v/private/typings/linked/v1/qamkpmovilidadco.frontend-app@0.0.2+build1738095510/public/@types/qamkpmovilidadco.frontend-app":
+"qamkpmovilidadco.frontend-app@https://manutromero--qamkpmovilidadco.myvtex.com/_v/private/typings/linked/v1/qamkpmovilidadco.frontend-app@0.0.2+build1738099992/public/@types/qamkpmovilidadco.frontend-app":
   version "0.0.2"
-  resolved "https://manutromero--qamkpmovilidadco.myvtex.com/_v/private/typings/linked/v1/qamkpmovilidadco.frontend-app@0.0.2+build1738095510/public/@types/qamkpmovilidadco.frontend-app#2847ab1f80bc7aafa33349f40d36ab7c42745b0f"
+  resolved "https://manutromero--qamkpmovilidadco.myvtex.com/_v/private/typings/linked/v1/qamkpmovilidadco.frontend-app@0.0.2+build1738099992/public/@types/qamkpmovilidadco.frontend-app#f30d753b276e3b01fbfe5dc6a8babb922ed1be2d"
 
 qs@~6.5.2:
   version "6.5.3"
@@ -5341,6 +5341,14 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
+"vtex.apps-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.apps-graphql@3.17.4/public/@types/vtex.apps-graphql":
+  version "3.17.4"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.apps-graphql@3.17.4/public/@types/vtex.apps-graphql#0e0abc699713a7113f1ec4948456bcd9e330d0f9"
+
+"vtex.order-manager@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager":
+  version "0.12.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager#2cf6a9d2a31bc503b783c257695b0d17c09b5696"
+
 "vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context":
   version "0.10.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context#86ceba68085420edcf54749f07e51a257d2e5d94"
@@ -5348,10 +5356,6 @@ verror@1.10.0:
 "vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.135.1/public/@types/vtex.render-runtime":
   version "8.135.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.135.1/public/@types/vtex.render-runtime#357ddee2f9249db4209de73b26c43997a5ca4422"
-
-"vtex.search-page-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-page-context@0.2.0/public/@types/vtex.search-page-context":
-  version "0.2.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-page-context@0.2.0/public/@types/vtex.search-page-context#1b37f20648d8e4ff062ae9fffb0aa2718f172af7"
 
 w3c-hr-time@^1.0.1:
   version "1.0.2"

@@ -1,0 +1,5 @@
+query GetAppSetting($app: String, $version: String) {
+  appSettings(app: $app, version: $version) {
+    message
+  }
+}

@@ -12,11 +12,27 @@
   },
   "dependencies": {
     "vtex.product-context": "0.x",
-    "vtex.order-manager": "0.x"
+    "vtex.order-manager": "0.x",
+    "vtex.render-runtime": "0.x",
+    "vtex.apps-graphql": "3.x"
   },
-  "registries": [
-    "smartcheckout"
-  ],
+  "registries": ["smartcheckout"],
+  "settingsSchema": {
+    "title": "Google Tag Manager",
+    "type": "object",
+    "properties": {
+      "appId": {
+        "title": "Agrega el codigo de activacion",
+        "description": "Agrega el ID (XXXXXX) para activar tu producto",
+        "type": "string"
+      },
+      "allowCustomHtmlTags": {
+        "title": "Allow Custom HTML tags",
+        "description": "Beware that using Custom HTML tags can drastically impact the store's performance",
+        "type": "boolean"
+      }
+    }
+  },
   "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
