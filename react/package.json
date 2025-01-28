@@ -19,7 +19,11 @@
     "@vtex/tsconfig": "^0.4.4",
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
-    "typescript": "3.9.7"
+    "qamkpmovilidadco.frontend-app": "https://manutromero--qamkpmovilidadco.myvtex.com/_v/private/typings/linked/v1/qamkpmovilidadco.frontend-app@0.0.2+build1738095510/public/@types/qamkpmovilidadco.frontend-app",
+    "typescript": "3.9.7",
+    "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.135.1/public/@types/vtex.render-runtime",
+    "vtex.search-page-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-page-context@0.2.0/public/@types/vtex.search-page-context"
   },
   "resolutions": {
     "@types/jest": "26.0.15"
