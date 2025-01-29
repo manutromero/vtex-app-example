@@ -1,0 +1,27 @@
+query GetDocument(
+  $acronym: String
+  $fields: [String]
+  $page: Int
+  $pageSize: Int
+  $where: String
+  $sort: String
+  $schema: String
+  $account: String
+) @context(provider: "vtex.store-graphql@2.x") {
+  documents(
+    acronym: $acronym
+    fields: $fields
+    page: $page
+    pageSize: $pageSize
+    where: $where
+    sort: $sort
+    schema: $schema
+    account: $account
+  ) {
+    id
+    fields {
+      key
+      value
+    }
+  }
+}
