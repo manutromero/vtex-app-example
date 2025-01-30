@@ -12,7 +12,7 @@ function ProductContext() {
   const { orderForm } = useOrderForm()
 
   const { data, loading, error } = useQuery(GET_APP_SETTINGS, {
-    variables: { app: `qamkpmovilidadco.frontend-app` },
+    variables: { app: `itgloberspartnerpe.frontend-app` },
   })
 
   const appSettings = (() => {

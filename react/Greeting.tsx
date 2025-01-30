@@ -1,7 +1,8 @@
 import React, { ReactNode, useEffect } from 'react'
-import { useQuery } from 'react-apollo'
+import { useQuery, useMutation } from 'react-apollo'
 
 import GET_DOCUMENTS from '../queries/getDocument.graphql'
+import createDocumentMD from '../queries/mutationMD.graphql'
 
 type Props = {
   name: string
@@ -9,10 +10,15 @@ type Props = {
 }
 
 function Greeting({ name, children }: Props) {
+  const [
+    createDataDocument,
+    { loading: creating, error: createError },
+  ] = useMutation(createDocumentMD)
+
   const { data, loading, error } = useQuery(GET_DOCUMENTS, {
     variables: {
       acronym: 'US',
-      fields: ['numero, usuario'],
+      fields: ['numero, usuarios'],
     },
     context: {
       headers: {
@@ -20,6 +26,26 @@ function Greeting({ name, children }: Props) {
       },
     },
   })
+
+  const handleCreateDocument = async () => {
+    try {
+      const response = await createDataDocument({
+        variables: {
+          acronym: 'US',
+          document: {
+            fields: [
+              { key: 'numero', value: '12345' },
+              { key: 'usuarios', value: 'jhondoe@example.com' },
+            ],
+          },
+        },
+      })
+
+      console.info('Documento creado:', response.data)
+    } catch (err) {
+      console.error('Error al crear documento:', err)
+    }
+  }
 
   useEffect(() => {
     if (!loading && !error) {
@@ -31,6 +57,10 @@ function Greeting({ name, children }: Props) {
     <div>
       Hey, {name}
       {children && <div>{children}</div>}
+      <button onClick={handleCreateDocument} disabled={creating}>
+        {creating ? 'Guardando...' : 'Guardar Documento'}
+      </button>
+      {createError && <p style={{ color: 'red' }}>Error al crear documento</p>}
     </div>
   )
 }

@@ -1,12 +1,12 @@
 {
-    "wrapper-greeting": {
-        "component": "Greeting",
-        "render": "client",
-        "composition": "children"
-    },
-    "wrapper-product-context": {
-      "component": "ProductContext",
-      "render": "client",
-      "composition": "children"
+  "wrapper-greeting": {
+    "component": "Greeting",
+    "render": "client",
+    "composition": "children"
+  },
+  "wrapper-product-context": {
+    "component": "ProductContext",
+    "render": "client",
+    "composition": "children"
   }
 }
